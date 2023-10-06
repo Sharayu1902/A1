@@ -1,0 +1,149 @@
+Expt 1
+
+
+PS C:\Users\shara\Desktop\Project1> git --version
+git version 2.42.0.windows.2
+
+PS C:\Users\shara\Desktop\Project1> git init
+Reinitialized existing Git repository in C:/Users/shara/Desktop/Project1/.git/
+
+PS C:\Users\shara\Desktop\Project1> ls
+
+
+    Directory: C:\Users\shara\Desktop\Project1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         10/5/2023  10:20 PM             13 a.java
+-a----         10/5/2023  10:16 PM             11 hello.java
+
+
+PS C:\Users\shara\Desktop\Project1> git config --global user.name "sharayu"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+PS C:\Users\shara\Desktop\Project1> git add .
+
+PS C:\Users\shara\Desktop\Project1> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a.java
+        new file:   hello.java
+
+PS C:\Users\shara\Desktop\Project1> git commit -m "v1"
+[master (root-commit) 49d0930] v1
+ 2 files changed, 2 insertions(+)
+ create mode 100644 a.java
+ create mode 100644 hello.java
+
+PS C:\Users\shara\Desktop\Project1> git log
+commit 49d09305a9ddf31bdf7cf9b1fcfc8d9f7f3702cf (HEAD -> master)
+Author: sharayu <sharayu123@gmail.com>
+Date:   Thu Oct 5 22:54:46 2023 +0530
+lU
+PS C:\Users\shara\Desktop\Project1> git log
+commit 49d09305a9ddf31bdf7cf9b1fcfc8d9f7f3702cf (HEAD -> master)
+Author: sharayu <sharayu123@gmail.com>
+Date:   Thu Oct 5 22:54:46 2023 +0530
+
+    v1
+
+PS C:\Users\shara\Desktop\Project1> git remote add AB https://github.com/Sharayu1902/DevOps19
+
+PS C:\Users\shara\Desktop\Project1> git push AB master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 264 bytes | 264.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Sharayu1902/DevOps19
+ * [new branch]      master -> master
+
+
+ 
+PS C:\Users\shara\Desktop\Project1> git push AB master
+Everything up-to-date
+
+PS C:\Users\shara\Desktop\Project1> git remote add a https://github.com/Sharayu1902/DevOps19.git
+
+PS C:\Users\shara\Desktop\Project1> git push a master
+Everything up-to-date
+
+PS C:\Users\shara\Desktop\Project1> 
+
+
+
+Exp2
+Expt 2 devoops ------------------------------>>>>>>>>>>
+
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1> git clone devoops
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1> git clone Devoops
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1> git clone https://github.com/Anjali1106/devoops.git
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1\devoops> git status
+
+nothing to commit, working tree clean
+
+
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1\devoops> git add hello.java 
+ 
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1\devoops> git commit -m "add file"
+[master 30903b2] add file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello.java
+
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1\devoops> git branch feature
+
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1\devoops> git checkout feature
+
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1\devoops> git remote add anja https://github.com/Anjali1106/devoops.git
+
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1\devoops> git push anja feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 261 bytes | 130.00 KiB/s, done.
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Anjali1106/devoops/pull/new/feature
+remote:
+To https://github.com/Anjali1106/devoops.git
+ * [new branch]      feature -> feature
+
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1\devoops> git commit -m "add file"
+Changes not staged for commit:
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.java
+
+
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1\devoops> git org pull main
+
+The most similar commands are
+        log
+        merge
+        tag
+PS C:\Users\Anjali\OneDrive\Desktop\devopsex1\devoops> git log
+commit 5108d62664f67367f623d90db06d914e293b9dc7 (HEAD -> feature)
+Merge: e36ace8 30903b2
+Author: Anjali1106 <118378663+Anjali1106@users.noreply.github.com>
+Date:   Thu Oct 5 23:59:11 2023 +0530
+
+    Merge pull request #1 from Anjali1106/feature
+
+    file
+
+commit 30903b2f4594b1244be55efa85ca5110471ee0e8 (anja/feature, master)
+Author: Anjali <anjali@gmail.com>
+Date:   Thu Oct 5 23:34:39 2023 +0530
+
+    add file
